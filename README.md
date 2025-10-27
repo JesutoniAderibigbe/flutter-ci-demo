@@ -1,17 +1,39 @@
-# ci_with_flutter
+# Flutter CI Demo 🚀
 
-A new Flutter project.
+A simple Flutter project demonstrating how to set up Continuous Integration (CI) using **GitHub Actions** — including code analysis, testing, and APK builds.
 
-## Getting Started
+## 🧠 What This Project Demonstrates
+- ✅ Automated Flutter setup with GitHub Actions  
+- ✅ Static code analysis (`flutter analyze`)  
+- ✅ Unit & widget tests (`flutter test`)  
+- ✅ Automatic release APK build and artifact upload  
 
-This project is a starting point for a Flutter application.
+## ⚙️ Workflow Overview
+The CI pipeline runs automatically on:
+- Pushes to `main`
+- Pull requests targeting `main`
 
-A few resources to get you started if this is your first Flutter project:
+### Pipeline Steps
+1. Checkout Repository  
+2. Install Flutter  
+3. Install Dependencies  
+4. Analyze Code  
+5. Run Tests  
+6. Build Release APK  
+7. Upload APK Artifact  
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 📦 Download APK
+After each successful workflow run, go to the **Actions** tab → Select a run → Download `app-release-apk`.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# flutter-ci-demo
+## 🧰 Tech Stack
+- Flutter (stable channel)
+- GitHub Actions
+
+## 💡 Next Improvements
+- Add cache to speed up builds  
+- Add automated release to Firebase App Distribution  
+- Include iOS build workflow (using macOS runner)
+
+---
+
+*Built with ❤️ by [Jesutoni Aderibigbe]*
