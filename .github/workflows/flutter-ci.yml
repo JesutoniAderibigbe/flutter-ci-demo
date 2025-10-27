@@ -28,6 +28,12 @@ jobs:
       - name: Run tests
         run: flutter test
 
+      - name: Analyze code
+        run: flutter analyze
+
+      - name: Format check
+        run: flutter format --set-exit-if-changed .`
+
       - name: Build APK
         run: flutter build apk --release
 
